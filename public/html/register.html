@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+    <head>
+        <title>K COURSES - Register</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=2">
+        <meta name="language" content="Greek">
+        <link rel="stylesheet" href="../stylesheets/register.css">
+        <script type="text/javascript" src="../javascripts/register.js"></script>
+
+    </head>
+    <body>
+        <div class="all">
+            <header>
+                <h2 class="h2_header"><a href="../index.html" class="main-href">K Courses - Project B</a></h2>
+                <span>
+                    <a class="a-h" href="../index.html"><img src='../images/home1.png' width="40" height="40"></a>
+                </span>
+            </header>
+            
+            <main>
+        
+                <div class="main-div">   
+                    <h1>K Courses /</h1>
+                    <h3 class="main_fBox-h3"> <em> <strong> Εγγραφή</em></strong></h3>
+                </div>  
+
+                <!--onsubmit="showHide(); return false;"-->
+                <div id="hide">
+                    <h4 class="main_h4-1">Συμπληρώστε αυτήν τη φόρμα για να δημιουργήσετε έναν λογαριασμό. </h4>
+                    <form class="fieldset1" id="app" >
+                        <div>
+                            <fieldset>
+                                <legend class="legend">Προσωπικά Στοιχεία:</legend><br>
+                                    <label for="fname">Όνομα:</label>
+                                    <input type="text" id="fname" name="fname" required autocomplete="given-name">
+                                    <label for="lname">Επώνυμο:</label>
+                                    <input type="text" id="lname" name="lname" required autocomplete="family-name">
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <label for="address">Διεύθυνση:</label>
+                                <input type="text" id="address" name="address" placeholder="πχ. Παύλου Μελά 17" required>
+                                <label for="phone">Τηλέφωνο:</label>
+                                <input type="tel" id="phone" name="phone" autocomplete="tel" minlength="10" maxlength="10" placeholder="69********" required>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <legend class="legend">Στοιχεία Χρήστη:</legend><br>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="email@example.com" required autocomplete="email">
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <label for="psw">Κωδικός Πρόσβασης:</label>
+                                <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+                                <label for="psw-repeat">Επανάλαβε<br>Κωδικό Πρόσβασης:</label>
+                                <input type="password" placeholder="Repeat Password" id="psw-repeat" name="psw-repeat" required>
+                                <div class="qmark tooltip">&#63;<span class="tooltiptext"> (α) θα πρέπει να περιλαμβάνει τουλάχιστον 8 χαρακτήρες, 
+                                    (β) θα πρέπει να περιλαμβάνει τουλάχιστον ένα αριθμό, 
+                                    (γ) ένα γράμμα και (δ) ένα από τα ειδικά σύμβολα !@#$%^&*.</span></div>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <legend class="legend">Μορφωτικό Επίπεδο:</legend><br>
+                                <label for="studies">Επίπεδο Σπουδών:</label>
+                                <input list="category" id="studies" name="studies" required>
+                                <datalist id="category">
+                                    <option value="Απόφοιτος Λυκείου">
+                                    <option value="Φοιτητής">
+                                    <option value="Εργαζόμενος">
+                                    <option value="Άλλο">
+                                </datalist>
+                                <label for="graduationyear">Έτος Αποφοίτησης:</label>
+                                <input type="number" id="graduationyear" name="graduationyear" placeholder="πχ. 2021" required>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <label for="depst">Τμήμα Σπουδών:</label>
+                                <input type="text" id="depst" name="depst" placeholder="πχ. Πληροφορική" required> 
+                                <label for="university">Πανεπιστήμιο:</label>
+                                <input type="text" id="university" name="university" placeholder="πχ. Οικονομικό Πανεπιστήμιο Αθηνών" required>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <label for="direct">Κατεύθυνση Σπουδών:</label>
+                                <input type="text" id="direct" name="direction" placeholder="πχ. web development" required>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <label for="knowledge"> Γνωστικά αντικείμενα: </label>
+                                <textarea rows="5" cols="55" id="knowledge" name="knowledge" placeholder="πχ. γνώση της Java, C++" required></textarea>
+                                
+                            </fieldset>
+                        </div>
+                    
+                        <button type="button" id = "submit" class="form_button">Υποβολή</button>
+                    </form>
+                    
+                </div>
+
+                <div id="hidden_div" class="hidden" style="display:none">
+                    <p>Η εγγραφή σας ολοκληρώθηκε με επιτυχία!<br>Επιστροφή στην αρχική σελίδα:</p>
+                    <a href="../index.html" class="menu-href"><button type="menu" class="menu_button">Αρχική Σελίδα</button></a>
+                </div>
+
+            </main>
+            
+            <footer>
+                <h2 class="h2_header"><a href="../index.html" class="main-href">K Courses - Project B</a></h2>
+            </footer>
+        </div>
+        
+    </body>
+    
+</html>

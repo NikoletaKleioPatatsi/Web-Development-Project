@@ -1,0 +1,359 @@
+.fieldset1{
+    position: relative;
+    top: -30vh;
+    width: fit-content;
+    left: 89vh;
+}
+
+.a-h{
+    position: relative; 
+    left: 165vh; 
+    top: 5vh;
+}
+
+.legend{
+    position: relative;
+    top: 1.5vh;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    width: 126vh;
+}
+
+legend{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#app {
+    background: rgb(172, 136, 39);
+    box-shadow: 0 0 2rem rgba(rgb(119, 24, 24), 0.1);
+    border-radius: 25px;
+    font-size: 17px;
+    height: 132vh;
+    width: 130vh;
+    position: relative;
+    left: 43vh;
+    top: 4.5vh;
+}
+
+fieldset{
+      border: 0;
+}
+
+input{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border-color: #000000;
+    background-color: rgb(172, 136, 39);
+} 
+
+/* ορίζει το background color όταν γίνεται το autofill */
+
+input:-webkit-autofill{
+    box-shadow: 0 0 0 30px rgb(172, 136, 39) inset;
+} 
+
+textarea{
+    box-sizing: border-box;
+    border-radius: 7px;
+    border-width: 2px;;
+    border-color: rgb(8, 8, 8);
+    background-color: rgb(172, 136, 39);
+}
+
+::placeholder{
+      color: #383636;
+}
+
+.form_button{
+    background-color: #034368/*rgb(6, 77, 95)*/;
+    size: 20px;
+    position: relative;
+    top: 11vh;
+    left: 97vh;  
+    border-radius: 7px;
+    width: 26vh;
+    height: 7vh;        
+    border-color: #000000;
+    color: wheat;
+    font-size: 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.form_button:hover{
+  background-color: rgb(1, 42, 70);
+  color: wheat;
+}
+
+.hidden{
+    position:absolute;
+    left: 84vh;
+    top: 37vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu_button{
+    background-color: #b4914c;
+    border-radius: 7px;
+    width: 26vh;
+    height: 7vh;        
+    border-color: #b4914c;
+    font-size: 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.menu-href{
+    text-decoration: none;
+    color: #000;
+}
+
+datalist{
+    background-color: rgb(172, 136, 39);
+    border-color: #000000;
+    border-width: 2px;
+    text-align: center;
+    border-radius: 7px;
+    height: 3vh;
+}
+
+label[for=psw]{
+    left: 1vh;
+}
+
+#psw{
+    position: relative;
+    left: 1vh;
+    width: 29vh;
+}
+
+label[for=psw-repeat]{
+    text-align: center;
+    top: 1.5vh;
+    left: 2.5vh;
+}
+
+#psw-repeat{
+    position: relative;
+    left: 2.5vh;
+    width: 30vh;
+}
+
+label{
+    position: relative;
+    display: inline-block;
+}
+
+label[for=lname]{
+    left: 27.5vh;
+}
+
+#lname{
+    position: relative;
+    left: 27.5vh;
+    width: 29vh;
+}
+
+label[for=email]{
+    left: 15.25vh;
+}
+
+#email{
+    position: relative;
+    left: 15.25vh;
+    width: 29vh;
+}
+
+label[for=fname]{
+    left: 15vh;
+}
+
+#fname{
+    position: relative;
+    left: 15.25vh;
+}
+
+label[for=phone]{
+    left: 22.5vh;
+}
+
+#phone{
+    position: relative;
+    left: 22.7vh;
+    width: 29.7vh;
+}
+
+label[for=address]{
+    left: 11.5vh;
+}
+
+#address{
+    position: relative;
+    left: 11.5vh;
+    width: 28.5vh;
+}
+
+label[for=studies]{
+    left: 3.8vh;
+}
+
+#studies{
+    position: relative;
+    left: 3.8vh;
+    width: 29.5vh;
+}
+
+label[for=graduationyear]{
+    left: 6vh;
+}
+
+#graduationyear{
+    position: relative;
+    left: 6vh;
+    width: 29.5vh;
+}
+
+label[for=depst]{
+    left: 5vh;
+}
+
+#depst{
+    position: relative;
+    left: 5vh;
+    width: 29.5vh;
+}
+
+label[for=university]{
+    left: 12vh;
+}
+
+#university{
+    position: relative;
+    left: 12vh;
+    width: 29.5vh;
+}
+
+label[for=direct]{
+    left: -0.5vh;
+}
+
+#direct{
+    position: relative;
+    left: -0.5vh;
+    width: 29.5vh;
+}
+
+label[for=knowledge]{
+    top: -7vh;
+    left: 0.3vh;
+}
+
+#knowledge{
+    position: relative;
+    top: 7vh;
+    left: -22.5vh;
+}
+
+.main_fBox-h3{
+    position: relative;
+    left: 24vh;
+    top: -7vh;
+    font-size: 22px;
+}
+
+.main_h4-1 {
+    position: relative;
+    font-weight:600;
+    left: 69vh;
+    font-size: 18px;
+}
+
+.main-div{
+    position: relative;
+    left: 2.5vh;
+}
+
+.qmark{
+    position: relative; 
+    left: 108vh;
+    top: -5.25vh;     
+    display: block;
+    background: #034368;
+    color: #fff;
+    border-radius: 50%;
+    width: 2.7vh;
+    height: 2.8vh;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Verdana;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    display: inline-block;
+    font-size: 12px;
+    width: 40vh;
+    background-color: #000000;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.h2_header{
+    color: rgb(172, 136, 39);
+    position: relative;
+    left: 90vh;
+    top: 2vh;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 250px 0px 0px;
+    margin-top: -10px;
+    margin-left: -10px;
+    background-color: #100807; 
+    width: 110%; 
+    height: 15.25vh; 
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 250px 0px 0px;
+    background-color: #100807; 
+    width: 110%; 
+    height: 15.25vh; 
+    margin-top: 34vh;
+    margin-left: -2vh;
+    position: relative;
+    top: 16vh;
+}
+
+.main-href{
+    text-decoration: none;
+    color: #b4914c;
+}
+
+.all{
+    min-height: 84vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}

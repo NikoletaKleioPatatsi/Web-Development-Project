@@ -1,0 +1,272 @@
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 53%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -7vh;
+    left: 14.5vh;
+}
+
+.h2_header{
+    color: rgb(172, 136, 39);
+    position: relative;
+    left: 90vh;
+    top: 2vh;
+}
+
+.a-h{
+    position: relative; 
+    left: 165vh; 
+    top: 5vh;
+}
+
+.main-div{
+    position: relative;
+    left: 2.5vh;
+}
+
+.main_fBox-h3{
+    position: relative;
+    left: 24vh;
+    top: -7vh;
+    font-size: 22px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 250px 0px 0px;
+    background-color: #100807; 
+    width: 110%; 
+    height: 15.25vh; 
+    margin-top: -10px;
+    margin-left: -10px;;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 250px 0px 0px;
+    background-color: #100807; 
+    width: 110%; 
+    height: 15.25vh; 
+    margin-top: 34vh;
+    margin-left: -10px;
+    position: relative;
+    top: 21vh;
+}
+
+.main-href{
+    text-decoration: none;
+    color: #b4914c;
+}
+
+.lh1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b4914c;
+    color: #000;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #b4914c;
+    color: #fff;
+}
+
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover{
+    color: #b4914c;
+}
+
+.all{
+    min-height: 84vh;
+    display: flex;
+    flex-direction: column;
+} 
+
+main{
+    flex: 1;
+}
+
+button {
+    background-color: #b4914c;
+    color: rgb(8, 8, 8);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+
+ul{
+    list-style: none;
+    width: 330px;
+}
+
+.infobox{
+    width: 680px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 53%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10vh;
+    background: -webkit-gradient(linear, left top, right top, from(#5095ce), to(#1051a7));
+    background: linear-gradient(to right, #1e1c8b, #1f7ce7)
+}
+
+.iimg{
+    border-radius: 50%;
+    width: 13%;
+    height: 20%;
+    position: absolute;
+    left: 12vh;
+}
+
+.ifn{
+    position: absolute;
+    top: 27vh;
+    left: 10vh;
+    font-size: 14px;
+}
+
+.iln{
+    position: absolute;
+    top: 37vh;
+    left: 10vh;
+    font-size: 14px;
+}
+
+.idiv{
+    position: absolute;
+    left: 45vh;
+}
+
+.if{
+    position: absolute;
+    top: 22vh;
+    left: 10vh;
+}
+
+.il{
+    position: absolute;
+    top: 32vh;
+    left: 10vh;
+}
+
+.eml{
+    position: absolute;
+    left: -12vh;
+    top: 2vh;
+}
+
+.addr{
+    position: absolute;
+    top: 2vh;
+    left: 15vh;
+}
+
+.tel{
+    position: absolute;
+    left: -12vh;
+    top: 9vh;
+}
+
+.stl{
+    position: absolute;
+    top: 9vh;
+    left: 15vh;
+}
+
+.uni{
+    position: absolute;
+    left: -12vh;
+    top: 16vh;
+}
+
+.stc{
+    position: absolute;
+    top: 16vh;
+    left: 15vh;
+}
+
+.std{
+    position: absolute;
+    left: -12vh;
+    top: 23vh;
+}
+
+.grdy{
+    position: absolute;
+    top: 23vh;
+    left: 15vh;
+}
+
+.lo{
+    position: absolute;
+    left: -12vh;
+    top: 30vh;
+}

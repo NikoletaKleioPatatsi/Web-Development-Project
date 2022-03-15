@@ -1,0 +1,173 @@
+header{
+    display: grid;
+    grid-template-columns: 250px 0px 0px;
+    background-color: #100807; 
+    width: 110%; 
+    height: 15.25vh; 
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+body{
+    overflow-x: hidden;
+    height:fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 250px 0px 0px;
+    background-color: #100807; 
+    width: 110%; 
+    height: 15.25vh; 
+    margin-top: 34vh;
+    margin-left: -10px;
+    position: relative;
+    top: 16vh;
+}
+
+.all{
+    min-height: 84vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+.a-h{
+    position: relative; 
+    left: 165vh; 
+    top: 5vh;
+}
+
+.categoryName{
+    position: relative;
+    left: -0.7%; 
+    top: 0vh; 
+    border-bottom: 60px solid rgb(172, 136, 39); 
+    border-left: 100px; 
+    border-right: 100px solid transparent; 
+    height: 0; 
+    width: 55vh;
+    text-align: center;
+    line-height: 2.2em;
+
+}
+
+.main-href{
+    text-decoration: none;
+    color: #b4914c;
+}
+
+.response{
+    position: relative;
+    left: 43%;
+    width: 11.5%;
+    height: 5%;
+    top: 2vh;
+    text-decoration: underline dotted red;
+    font-size: 16px;
+}
+.h2_header{
+    color: rgb(172, 136, 39);
+    position: relative;
+    left: 90vh;
+    top: 2vh;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    position: relative;
+    top: 3vh;
+    left: 10vh;
+}
+  
+table td, table th {
+    border: 1px solid #100807;
+    padding: 8px;
+}
+    
+table tr:hover {background-color: rgb(176, 207, 248);}
+  
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #100807;/*#00576d;*/
+    color: #b4914c;
+}
+
+/* format for sidenav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    left: -8vh;
+    color: #b4914c;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.h5_stripes{
+    position: relative;
+    left: 0vh;
+    top: -7vh;
+    font-size: 26px;
+}
+
+.h5_categories{
+    position: relative;
+    left: 5vh;
+    top: -17vh;
+    font-size: 26px;
+}
+
+.span_header{
+    position: relative;
+    left: -34vh;
+    top: 3.5vh;
+    color: #b4914c;
+    font-size:30px;
+    cursor:pointer;
+}

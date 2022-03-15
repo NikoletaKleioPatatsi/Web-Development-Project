@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title> COURSES </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.js"></script>
+        <script type="text/javascript" src="../javascripts/indexFetch.js"></script>
+        <script type="text/javascript" src="../javascripts/menubar.js"></script>
+        <link rel="stylesheet" href="../stylesheets/courses.css">
+
+        <!-- script for take the query from url and call the getCoursesByCategory(id) -->
+        <script>
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const params = Object.fromEntries(urlSearchParams.entries());
+            console.log(params);
+            
+            window.addEventListener('load', function(){
+                getCoursesByCategory(Object.values(params));
+            })
+            
+        </script>
+
+        <!-- template for categories list -->
+        <script id="categories-list-template" type="text/x-handlebars-template"> 
+
+            <ul>
+                {{#each array}}
+                    <li class="li"> <a href="courses.html?category={{id}}"> {{title}} </a>  </li>
+                {{/each}}
+            </ul>
+        </script>
+
+        <!-- template for course table -->
+        <script id="courses-table-template" type="text/x-handlebars-template"> 
+            
+            <thead>
+                <tr>
+                    <th>title</th>
+                    <th>objectives</th>		
+                    <th>description</th>
+                    <th>img</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                {{#each array}}
+					<tr>
+                        <td> {{title}}</td>
+                        <td> {{objectives}}</td> 
+                        <td> {{description}}</td>  
+                        <td> <img src="https://elearning-aueb.herokuapp.com/static/images/{{img}}" width="120" height="90"> </td>	
+					</tr>
+				{{/each}}
+            </tbody>
+
+        </script>
+
+    </head>
+    <body>
+        <div class="all">
+            <header>
+                <h2 class="h2_header"><a href="../index.html" class="main-href">K Courses - Project B</a></h2>
+                <div id="main">
+                    <div id="CategoriesButton">
+                        <span onclick="openNav()" class="span_header"><h5 class="h5_stripes" >&#9776;</h5></span> 
+                        <span onclick="openNav()" class="span_header"><h5 class="h5_categories">Categories</h5></span> 
+                    </div>
+                </div>
+                <span>
+                    <a class="a-h" href="../index.html"><img src='../images/home1.png' width="40" height="40"></a>
+                </span>
+            </header>
+
+            <main>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <!-- categories list template --> 
+                    <ul id="categories-handlebars-list"></ul>
+
+                </div>
+                <!-- empty object response-->
+                <div id="emptyResponse" class="response"> </div>
+                
+                <!-- category name-->
+                <h2 id="categoryName" class="categoryName"> </h2>
+
+                <!-- courses table template -->
+                <table id="courses-handlebars-table" class="table"></table>
+            </main>
+
+            <footer>
+                <h2 class="h2_header"><a href="../index.html" class="main-href">K Courses - Project B</a></h2>
+            </footer>
+        </div>
+    </body>
+
+</html>

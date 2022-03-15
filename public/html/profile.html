@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <title>K COURSES - Log In</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="language" content="Greek">
+        <link rel="stylesheet" href="../stylesheets/profile.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.js"></script>
+        <script type="text/javascript" src="../javascripts/profile.js"></script>
+        <script type="text/javascript" src="../javascripts/menubar.js"></script>
+
+        
+        <!-- template for user data -->
+        <script id="user-data-template" type="text/x-handlebars-template"> 
+            <img src="../images/av.jpg" class="iimg">
+            <h5 class="if">Όνομα: </h5>
+            <h3 class="ifn">{{fname}}</h3> 
+            <h5 class="il">Επώνυμο: </h5>
+            <h3 class="iln">{{lnane}}</h3>
+            <div class="idiv">
+                <ul>
+                    <li class="eml">
+                        Email: <br> {{email}}
+                    </li>
+                    <li class="addr">
+                        Διεύθυνση: <br> {{address}}
+                    </li>
+                    <li class="tel">
+                        Τηλέφωνο: <br> {{phone}}
+                    </li>
+                    <li class="stl">
+                        Επίπεδο Σπουδών: <br> {{studies}}
+                    </li>
+                    <li class="uni">
+                        Πανεπιστήμιο: <br> {{university}}
+                    </li>
+                    <li class="stc">
+                        Τμήμα Σπουδών: <br> {{depst}}
+                    </li>
+                    <li class="std">
+                        Κατεύθυνση Σπουδών: <br> {{direct}}
+                    </li>
+                    <li class="grdy">
+                        Έτος Αποφοίτησης: <br> {{graduationyear}}
+                    </li>	
+                    <li class="lo">
+                        Γνωστικά Αντικείμενα: <br> {{knowledge}}
+                    </li>
+                </ul>
+            </div>
+        </script>
+
+    </head>
+    <body>
+        <div class="all">
+            <header>
+                <h2 class="h2_header"><a href="../index.html" class="main-href">K Courses - Project B</a></h2>
+                <span>
+                    <a class="a-h" href="../index.html"><img src='../images/home1.png' width="40" height="40"></a>
+                </span>
+            </header>
+            
+            <main>
+         
+                <div class="main-div">   
+                    <h1>K Courses /</h1>
+                    <h3 class="main_fBox-h3"> <em> <strong> Σύνδεση</em></strong>
+                    </h3>
+                </div>  
+        
+
+                <div id = "form" class="loginbox">
+                    <img src="../images/gold-black-avatar.jpg" class="avatar">
+                    <h1 class="lh1">Login Here</h1>
+                    <form>
+                        <p>Email</p>
+                        <input type="text" name="Lusern" placeholder="Enter Email" id = "email">
+                        <p>Password</p>
+                        <input type="password" name="Lpsw" placeholder="Enter Password" id = "password">
+                        <button type="button" id = "submit_btn">Login</button>
+                        <!-- <input type="submit" name="Lsumbmit" value="Login"> -->
+                        <a href="../html/register.html">Don't have an account?</a>
+                    </form>
+                </div>
+
+                <div id = "user_data" style="display:none" class="infobox">
+                    <div id = "user-data-handlebars"></div>
+                </div>
+
+            </main>
+            
+            <footer>
+                <h2 class="h2_header"><a href="../index.html" class="main-href">K Courses - Project B</a></h2>
+            </footer>
+        </div>
+    </body>
+</html>
